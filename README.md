@@ -4,3 +4,5 @@ Add Index.html and create a text, add styles.css and add some base styles
 Add fonts and images, add styles.css( fonts and colors), make classes
 20.08.25
 Change .png files to .webp
+31.08.25
+Maked flex-box containers, add svg-files, add background-images, form for call, formats-section items, whyus-items.
