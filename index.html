@@ -60,7 +60,9 @@
               </h1>
             </div>
             <div class="button-section">
-              <button class="button-title">Замовити дзвінок</button>
+              <button class="button-title modal-btn-open" type="button">
+                Замовити дзвінок
+              </button>
               <p class="button-bottom">
                 Запишись та отримай безкоштовну <br />
                 консультацію нашого косметолога
@@ -92,24 +94,40 @@
               </p>
             </div>
             <div class="aboutus-images">
-              <img
-                class="aboutus-image"
-                src="./media/face1.jpg"
-                alt="лице до"
-              />
-              <img
-                class="aboutus-image"
-                src="./media/face2.jpg"
-                alt="лице після"
-              />
+              <ul class="aboutus-image-list">
+                <li class="aboutus-image-item top">
+                  <img
+                    class="aboutus-image"
+                    src="./media/face1.jpg"
+                    alt="лице до"
+                  />
+                </li>
+                <li class="aboutus-image-item bottom">
+                  <img
+                    class="aboutus-image"
+                    src="./media/face2.jpg"
+                    alt="лице після"
+                  />
+                </li>
+              </ul>
+              <svg class="bcg-star blue">
+                <use href="./media/star-bcg.svg#icon-star-bcg"></use>
+              </svg>
+              <svg class="bcg-star lightblue">
+                <use href="./media/star-bcg.svg#icon-star-bcg"></use>
+              </svg>
+              <svg class="bcg-star gray">
+                <use href="./media/star-bcg.svg#icon-star-bcg"></use>
+              </svg>
             </div>
           </div>
         </div>
       </section>
-      <section class="section" id="Why-us">
+      <section class="section whyus-section" id="Why-us">
         <div class="container">
           <h2 class="whyus-title section-title centered">
-            Чому люди <span class="accent">обирають нас</span>
+            Чому люди <br />
+            <span class="accent">обирають нас</span>
           </h2>
           <ul class="whyus-list">
             <li class="whyus-item">
@@ -170,7 +188,7 @@
           </h2>
           <div class="products-container">
             <button class="carousel-button" type="button">
-              <svg class="carousel-arrow" width="16" height="16">
+              <svg class="carousel-arrow">
                 <use href="./media/Carousel.svg#icon-Arrow"></use>
               </svg>
             </button>
@@ -206,8 +224,8 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
-              <svg class="carousel-arrow" width="16" height="16">
+            <button class="carousel-button next" type="button">
+              <svg class="carousel-arrow">
                 <use href="./media/Carousel.svg#icon-Arrow"></use>
               </svg>
             </button>
@@ -232,25 +250,57 @@
               ></iframe>
             </div>
             <div class="contacts-form">
-              <p class="contacts-text">
+              <p class="form-text">
                 Запишіться <span class="accent">безкоштовно</span> <br />
                 та отримайте подарунок
               </p>
-              <button class="contacts-button">Записатись безкоштовно</button>
-              <a href="#" class="contacts-copyright">
-                <br />
-                Натискаючи на кнопку я погоджуюсь
-                <span class="accent">
-                  <br />
-                  з політикою конфіденційності</span
-                >></a
-              >
+              <form class="form" name="modal-form" autocomplete="off">
+                <div class="formfield">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                    required
+                  />
+                </div>
+                <div class="formfield">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Ваш номер телефону"
+                    required
+                  />
+                </div>
+                <div class="formfield">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Ваша електронна пошта"
+                    required
+                  />
+                </div>
+                <button class="contacts-button modal-button">
+                  Записатись безкоштовно
+                </button>
+                <p class="form-copyright">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a href="#" class="copyright-link">
+                    з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
@@ -321,5 +371,59 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <!-- <svg class="button-close">
+            <use href="./media/button-close.svg#icon-btn-close"></use>
+          </svg> -->
+        </button>
+        <h2 class="form-title">Замовити дзвінок</h2>
+        <p class="form-text">
+          Запишіться <span class="accent">безкоштовно</span> <br />
+          та отримайте подарунок
+        </p>
+        <form class="form" name="modal-form" autocomplete="off">
+          <div class="formfield">
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ваше ім'я та прізвище"
+              required
+            />
+          </div>
+          <div class="formfield">
+            <input
+              class="form-input"
+              type="text"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Ваш номер телефону"
+              required
+            />
+          </div>
+          <div class="formfield">
+            <input
+              class="form-input"
+              type="text"
+              name="user-email"
+              id="user-email"
+              placeholder="Ваша електронна пошта"
+              required
+            />
+          </div>
+          <button class="contacts-button modal-button">
+            Записатись безкоштовно
+          </button>
+          <p class="form-copyright">
+            Натискаючи на кнопку я погоджуюсь
+            <a href="#" class="copyright-link"> з політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src=".//js/modal.js"></script>
   </body>
 </html>
