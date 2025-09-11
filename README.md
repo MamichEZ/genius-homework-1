@@ -8,3 +8,5 @@ Change .png files to .webp
 Maked flex-box containers, add svg-files, add background-images, form for call, formats-section items, whyus-items.
 08.09
 Add bcg images, make modal window, animation to stars on bcg, add css-transitions to intractive elements, position elements.
+11.09
+Add validation to forms and correct width for hero-secction and footer
