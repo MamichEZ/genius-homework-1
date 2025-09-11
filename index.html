@@ -50,7 +50,7 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="container">
+        <div>
           <div class="hero-container">
             <div class="title-section">
               <p class="title-text">Косметологічна клініка</p>
@@ -262,23 +262,25 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Ваше ім'я та прізвище"
+                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                     required
                   />
                 </div>
                 <div class="formfield">
                   <input
                     class="form-input"
-                    type="text"
+                    type="tel"
                     name="user-tel"
                     id="user-tel"
                     placeholder="Ваш номер телефону"
+                    pattern="^\+380\[0-9]{9}"
                     required
                   />
                 </div>
                 <div class="formfield">
                   <input
                     class="form-input"
-                    type="text"
+                    type="email"
                     name="user-email"
                     id="user-email"
                     placeholder="Ваша електронна пошта"
@@ -301,7 +303,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div>
         <div class="footer-container">
           <nav class="footer-nav">
             <a href="/index.html" class="footer-logo" lang="en"
@@ -391,23 +393,25 @@
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
               required
             />
           </div>
           <div class="formfield">
             <input
               class="form-input"
-              type="text"
+              type="tel"
               name="user-tel"
               id="user-tel"
               placeholder="Ваш номер телефону"
+              pattern="^\+380\d{9}"
               required
             />
           </div>
           <div class="formfield">
             <input
               class="form-input"
-              type="text"
+              type="email"
               name="user-email"
               id="user-email"
               placeholder="Ваша електронна пошта"

@@ -175,6 +175,7 @@ header {
 
 .hero-container {
   position: relative;
+  right: -205px;
   display: flex;
   gap: 40px;
   flex-direction: column;
@@ -653,7 +654,8 @@ footer {
 
 .footer-container {
   display: flex;
-  padding: 56px 0;
+  padding: 56px 100px 56px 100px;
+  justify-content: space-around;
 }
 
 .footer-nav {
@@ -666,7 +668,7 @@ footer {
   flex-grow: 1;
 }
 
-.footer-menu {
+.footer-logo .footer-menu {
   display: flex;
   gap: 16px;
   flex-direction: column;
