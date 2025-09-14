@@ -10,3 +10,5 @@ Maked flex-box containers, add svg-files, add background-images, form for call, 
 Add bcg images, make modal window, animation to stars on bcg, add css-transitions to intractive elements, position elements.
 11.09
 Add validation to forms and correct width for hero-secction and footer
+14.09.25
+Fixed problems, also in footer (delete div), add "container" to footer and hero-section
