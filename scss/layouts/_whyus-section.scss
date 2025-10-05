@@ -1,0 +1,12 @@
+.whyus-section {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+  }
+
+  &__item {
+    width: 320px;
+  }
+}

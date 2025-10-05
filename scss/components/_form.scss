@@ -1,0 +1,66 @@
+.form {
+  &__title {
+    text-align: center;
+    color: var(--color-brand-white);
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Play';
+    margin-bottom: 40px;
+    line-height: 100%;
+  }
+
+  &__text {
+    text-align: center;
+    color: var(--color-brand-white);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: 2px solid var(--color-gray-light);
+    border-radius: 32px;
+    line-height: 1.1;
+    background-color: transparent;
+    padding: 18px 33px;
+    font-size: 13px;
+    transition: background-color 0.2s;
+  }
+
+  &__input::placeholder {
+    color: var(--color-brand-white);
+    font-size: 13px;
+    line-height: 100%;
+  }
+
+  &__input:focus {
+    background-color: var(--color-gray-light);
+    outline: none;
+  }
+
+  &__copyright {
+    color: var(--color-gray-light);
+    max-width: 220px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+    &--link {
+      color: var(--color-gray-light);
+      text-underline-offset: 2px;
+    }
+  }
+
+  &__field {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 24px;
+    }
+  }
+}

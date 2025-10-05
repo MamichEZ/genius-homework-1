@@ -1,0 +1,12 @@
+.logo {
+  color: var(--color-brand-light);
+  font-size: 16px;
+  font-family: 'Play';
+  font-weight: 700;
+  line-height: 0.96;
+  text-decoration: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 22px;
+  }
+}

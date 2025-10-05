@@ -1,0 +1,19 @@
+.text-accent {
+  color: var(--color-brand-light);
+}
+
+.text-bold {
+  font-weight: 700;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-weight: 600;
+  }
+}
+
+.title-accent {
+  font-weight: 700;
+}
+
+.text-centered {
+  text-align: center;
+}

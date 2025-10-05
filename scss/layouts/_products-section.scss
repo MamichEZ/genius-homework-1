@@ -1,0 +1,21 @@
+.products-section {
+  &__container {
+    overflow: hidden;
+  }
+
+  &__slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.button {
+  color: var(--color-brand-white);
+  border-radius: 24px;
+  border: 2px, solid var(--color-brand-light);
+  background-color: var(--color-brand-light);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 16px 24px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s;
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+    padding: 16px 32px;
+    border-radius: 32px;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}

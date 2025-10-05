@@ -1,0 +1,18 @@
+.contact {
+  display: none;
+  @media screen and (min-width: $bp-desktop) {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    transition: fill 0.2s;
+  }
+
+  &__icon:hover {
+    fill: var(--color-brand-light);
+  }
+}
